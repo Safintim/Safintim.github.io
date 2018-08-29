@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+    
+    <main>
+        <header>
+            <div id="header">
+                <div class="mid clearfix">
+                    <div class="logo">
+                        <a href="#"><img src="images/logo.png" alt="logo"></a>
+                    </div>
+                    <a href="#" id="touch-menu">Меню</a>
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="#">Intro</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="intro" class="box">
+                <h1 class="title">Our Mission</h1>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br>
+                    been the industry's standard dummy text ever since the 1500.
+                </p>
+            </div>
+        </header>
+        <article>
+            <section>
+                <div id="about" class="box">
+                    <div class="mid">
+                        <h1 class="title">About</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum  <br>
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown.
+                         </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="team" class="box">
+                   <div class="mid">
+                       <h1 class="title">Team</h1>
+                       <div class="team-wrap clearfix">
+                           <div class="team-item">
+                                <a href="#"><img src="images/team-item1.png" alt="John Doe"></a>
+                                <div class="t-item-footer">
+                                    <h5>John Doe</h5>
+                                    <span>Founder & CEO</span>
+                                </div>
+                           </div>
+                           <div class="team-item">
+                                <a href="#"><img src="images/team-item2.png" alt="John Doe"></a>
+                                <div class="t-item-footer">
+                                    <h5>John Doe</h5>
+                                    <span>Co-Founder</span>
+                                </div>
+                           </div>
+                           <div class="team-item">
+                                <a href="#"><img src="images/team-item3.png" alt="John Doe"></a>
+                                <div class="t-item-footer">
+                                    <h5>John Doe</h5>
+                                    <span>Investor</span>
+                                </div>
+                           </div>
+                       </div>
+                        <div class="button"><a href="#">work with us</a></div>
+                   </div>
+                </div>
+            </section>
+            <section>
+                <div id="map">
+                    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=nGZuq9kNUTN_Po5qg5O08e74FaUDyNXZ&width=100%&height=100%&lang=ru_RU&sourceType=constructor"></script>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <div id="footer">
+                <div class="mid">
+                    <div class="footer-wrap clearfix">
+                        <div class="f-item-top clearfix">
+                            <ul class="info">
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">faq</a></li>
+                                <li><a href="#">work with us</a></li>
+                            </ul>
+                            <div class="social">
+                                <a href="#" class="ic-ml">&nbsp;</a>
+                                <a href="#" class="ic-fc">&nbsp;</a>
+                                <a href="#" class="ic-tw">&nbsp;</a>
+                            </div>
+                        </div>
+                        <div class="f-item-bottom">
+                            <ul class="copy">
+                                <li><a href="#">Privacy Policy <span>|</span></a></li>
+                                <li><a href="#">Terms and Conditions <span>|</span></a></li>
+                                <li><a href="#">&copy; Company.LLC 2014</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script src="js/jquery-2.1.4.js"></script>
+	<script>
+			$(document).ready(function(){
+				var touch = $('#touch-menu');
+			    var menu = $('.nav');
+			 
+			    $(touch).on('click', function(e) {
+			        e.preventDefault();
+			        menu.slideToggle();
+			    });
+			    $(window).resize(function(){
+			        var wid = $(window).width();
+			        if(wid > 760 && menu.is(':hidden')) {
+			            menu.removeAttr('style');
+			        }
+			    });
+			});
+	</script>
+</body>
+</html>
