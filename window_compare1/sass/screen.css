@@ -1,0 +1,221 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: pfdintextcondpro;
+  src: url(../fonts/pfdintextcondpro-light.ttf); }
+
+/* line 13, D:/Torents/project/window_compare1/sass/screen.scss */
+a, a:hover {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/* line 14, D:/Torents/project/window_compare1/sass/screen.scss */
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 16, D:/Torents/project/window_compare1/sass/screen.scss */
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table; }
+
+/* line 20, D:/Torents/project/window_compare1/sass/screen.scss */
+.clearfix::after {
+  clear: both; }
+
+/* line 33, D:/Torents/project/window_compare1/sass/screen.scss */
+.popup {
+  width: 55%;
+  height: 840px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  margin: 100px auto;
+  padding: 60px 118px;
+  background: #fff;
+  border: 1px solid #bbb;
+  position: relative; }
+  /* line 43, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup ul {
+    list-style: none; }
+  /* line 46, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup ul li {
+    transition: all 0.5s;
+    color: #010101;
+    font-family: PFDinTextCondPro;
+    font: 300 24px/48px PFDinTextCondPro, Arial, sans-serif; }
+    /* line 51, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup ul li:nth-child(even) {
+      background-color: #f0f0f0; }
+    /* line 54, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup ul li:nth-child(odd) {
+      background-color: #fff; }
+    /* line 57, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup ul li:first-child, .popup ul li:nth-child(7) {
+      background-color: #bef04e; }
+    /* line 60, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup ul li:nth-child(2), .popup ul li:last-child {
+      background-color: #b6e54c; }
+  /* line 65, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup a {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s; }
+  /* line 73, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup img {
+    vertical-align: middle; }
+  /* line 77, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup a#cross {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 9px 19px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background: url(../images/cross.png) no-repeat center;
+    border: 2px solid transparent; }
+    /* line 85, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup a#cross:hover {
+      border: 2px solid rgba(0, 0, 0, 0.3); }
+  /* line 89, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup .flat-title {
+    position: absolute;
+    top: 60px;
+    z-index: 10; }
+    /* line 94, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup .flat-title .f-title-item {
+      border: 2px solid #81878a;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.42);
+      width: 270px; }
+      /* line 98, D:/Torents/project/window_compare1/sass/screen.scss */
+      .popup .flat-title .f-title-item .p-title-top {
+        background-color: #fff;
+        text-align: right;
+        padding: 60px 25px 40px 0; }
+        /* line 102, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-title .f-title-item .p-title-top h1 {
+          margin: 0;
+          color: #080216;
+          font: 300 36px/36px PFDinTextCondPro, Arial, sans-serif;
+          text-transform: uppercase; }
+      /* line 109, D:/Torents/project/window_compare1/sass/screen.scss */
+      .popup .flat-title .f-title-item ul li {
+        text-align: right;
+        padding-right: 28px; }
+      /* line 113, D:/Torents/project/window_compare1/sass/screen.scss */
+      .popup .flat-title .f-title-item .p-title-bottom {
+        background-color: #fff;
+        padding: 32px 25px 52px 0;
+        text-align: right; }
+        /* line 117, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-title .f-title-item .p-title-bottom h1 {
+          margin: 0;
+          color: #080216;
+          font: 300 30px/30px PFDinTextCondPro, Arial, sans-serif;
+          text-transform: uppercase; }
+        /* line 123, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-title .f-title-item .p-title-bottom span {
+          color: #f36;
+          font: 500 36px/30px PFDinTextCondPro, Arial, sans-serif; }
+  /* line 130, D:/Torents/project/window_compare1/sass/screen.scss */
+  .popup .flat-wrap {
+    position: absolute;
+    top: 78px;
+    left: 380.5px;
+    overflow-x: auto;
+    padding: 10px;
+    width: 690px; }
+    /* line 138, D:/Torents/project/window_compare1/sass/screen.scss */
+    .popup .flat-wrap .flat-items {
+      height: 724px;
+      width: 1600px;
+      padding-bottom: 10px; }
+      /* line 143, D:/Torents/project/window_compare1/sass/screen.scss */
+      .popup .flat-wrap .flat-items .flat-item {
+        position: relative;
+        float: left;
+        width: 229px;
+        height: 724px;
+        border: 2px solid #81878a;
+        border-left: none;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s; }
+        /* line 155, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item .p-flat-top {
+          text-align: center;
+          padding: 10px 0 20px;
+          height: 150px; }
+        /* line 160, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item ul li {
+          text-align: left;
+          padding-left: 35px; }
+        /* line 164, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item .p-flat-bottom {
+          background-color: #fff;
+          text-align: center;
+          padding: 10px 0 20px; }
+          /* line 169, D:/Torents/project/window_compare1/sass/screen.scss */
+          .popup .flat-wrap .flat-items .flat-item .p-flat-bottom a {
+            display: block;
+            margin-bottom: 15px;
+            color: #81878a;
+            font: 300 18px/18px PFDinTextCondPro; }
+            /* line 174, D:/Torents/project/window_compare1/sass/screen.scss */
+            .popup .flat-wrap .flat-items .flat-item .p-flat-bottom a:first-child:hover {
+              color: black;
+              font-weight: 400;
+              text-decoration: underline; }
+            /* line 179, D:/Torents/project/window_compare1/sass/screen.scss */
+            .popup .flat-wrap .flat-items .flat-item .p-flat-bottom a:nth-child(2):hover {
+              color: #ff0048;
+              font-weight: 400;
+              text-decoration: underline; }
+            /* line 184, D:/Torents/project/window_compare1/sass/screen.scss */
+            .popup .flat-wrap .flat-items .flat-item .p-flat-bottom a:last-child {
+              display: inline-block;
+              margin: 0;
+              padding: 17px 45px;
+              font: 400 20px/20px PFDinTextCondPro;
+              border: 1px solid #81878a;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+              border-radius: 10px; }
+              /* line 191, D:/Torents/project/window_compare1/sass/screen.scss */
+              .popup .flat-wrap .flat-items .flat-item .p-flat-bottom a:last-child:hover {
+                background-color: #ff5051;
+                border: 1px solid #070707;
+                color: #fff; }
+        /* line 200, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item:hover {
+          z-index: 10;
+          box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.42);
+          cursor: pointer; }
+        /* line 205, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item:hover ul li:nth-child(even) {
+          background-color: #fff; }
+        /* line 209, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item:hover ul li:first-child,
+        .popup .flat-wrap .flat-items .flat-item:hover ul li:nth-child(7) {
+          background-color: #ecfbca; }
+        /* line 213, D:/Torents/project/window_compare1/sass/screen.scss */
+        .popup .flat-wrap .flat-items .flat-item:hover ul li:nth-child(2),
+        .popup .flat-wrap .flat-items .flat-item:hover ul li:last-child {
+          background-color: #e0f5af; }
+
+/*# sourceMappingURL=screen.css.map */

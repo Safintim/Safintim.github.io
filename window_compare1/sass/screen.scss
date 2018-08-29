@@ -1,0 +1,247 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "normalize";
+
+@font-face{
+    font-family:pfdintextcondpro;
+    src: url(../fonts/pfdintextcondpro-light.ttf);
+}
+
+
+@mixin vendor($property, $value){
+    -webkit-#{$property}:$value;
+    -moz-#{$property}:$value;
+    -ms-#{$property}:$value;
+    -o-#{$property}:$value;
+    #{$property}:$value;
+}
+
+
+.popup{
+    height: 840px;
+    @include vendor('border-radius', 10px); 
+    margin: 100px auto;
+    padding: 60px 120px;
+    background: #fff;
+    border: 1px solid #bbb;
+    position: relative;
+    
+    h1,ul{margin: 0; padding: 0;}
+    ul{
+    list-style: none;
+    }
+    ul li{
+        transition: all .5s;
+        color: #010101;
+        font-family: PFDinTextCondPro;
+        font: 300 24px/48px PFDinTextCondPro, Arial,sans-serif;
+        &:nth-child(even){
+            background-color: #f0f0f0;
+        }
+        &:nth-child(odd){
+            background-color: #fff;
+        }
+        &:first-child, &:nth-child(7){
+            background-color: #bef04e;
+        }
+        &:nth-child(2), &:last-child{
+            background-color: #b6e54c;
+        }
+
+    }
+    
+    a{
+        text-decoration: none;
+        display: inline-block;
+        text-decoration: none;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        transition: all .5s;
+    }
+    img{
+        vertical-align: middle;
+        width: 170px;
+        height: 150px;
+    }
+    
+    a#cross{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 9px 19px;
+        @include vendor('border-radius', 50%);
+        background:  url(../images/cross.png) no-repeat center;
+        border: 2px solid transparent;
+        &:hover{
+            border: 2px solid rgba(0, 0, 0, 0.3);
+        }
+    }
+    .flat-title{
+        z-index: 10;
+        float: left;
+        width: 270px;
+    }
+    .f-title-item{
+        border: 2px solid #81878a;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.42);
+        width: 270px;
+        
+        ul li{
+                text-align: right;
+                padding-right: 28px;
+            }
+
+    }
+    .p-title-top{
+        background-color: #fff;
+        text-align: right;
+        padding: 60px 25px 40px 0; 
+        h1{
+            margin: 0;
+            color: #080216;
+            font: 300 36px/36px PFDinTextCondPro, Arial,sans-serif;
+            text-transform: uppercase;
+        }
+    }
+    .p-title-bottom{
+        background-color: #fff;
+        padding: 32px 25px 52px 0;
+        text-align: right;
+        h1{
+            margin:0;
+            color: #080216;
+            font: 300 30px/30px PFDinTextCondPro, Arial,sans-serif;
+            text-transform: uppercase;
+        }
+        span{
+            color:#f36;
+            font: 500 36px/30px PFDinTextCondPro, Arial,sans-serif;
+        }
+    }
+    
+       
+    
+    .flat-wrap{
+        margin-top: 28px;
+        margin-left: 4px;
+        float: left;
+        overflow-x: auto;
+        padding-bottom:10px;
+        width: 685px;
+        z-index: 6;
+    }
+    .flat-items{
+        min-width: 690px;
+        height: 724px;
+    }
+    .flat-items::before,
+    .flat-items::after{
+        content: " ";
+        display: table;
+    }
+    .flat-items::after{
+        clear: both;
+    }
+    .flat-item{
+        position: relative;
+        float: left;
+        width: 229px;
+        border: 2px solid #81878a;
+        border-left:none;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -ms-transition: all .5s;
+        transition: all .5s;
+        
+        ul li{
+            text-align: left;
+            padding-left: 35px;
+        }
+        
+        &:hover{
+        box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.42);
+        cursor: pointer;
+        z-index: 15;
+        }
+        &:hover ul li:nth-child(even){
+            background-color: #fff;
+        }
+        &:hover ul li:first-child,
+        &:hover ul li:nth-child(7){
+            background-color: #ecfbca;
+        }
+        &:hover ul li:nth-child(2),
+        &:hover ul li:last-child{
+            background-color: #e0f5af;
+        }
+    }
+    .p-flat-top{
+        text-align: center;
+        padding: 10px 0 20px;
+        height: 150px;
+    }
+    .p-flat-bottom{
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0 20px;
+
+        a{
+            display: block;
+            margin-bottom: 15px;
+            color: #81878a;
+            font: 300 18px/18px PFDinTextCondPro;
+            &:first-child:hover{
+                color: black;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+            &:nth-child(2):hover{
+                color: #ff0048;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+            &:last-child{
+                display: inline-block;
+                margin: 0;
+                padding: 17px 45px;
+                font: 400 20px/20px PFDinTextCondPro;
+                border: 1px solid #81878a;
+                @include vendor ('border-radius', 10px);
+                &:hover{
+                    background-color: #ff5051;
+                    border: 1px solid #070707;
+                    color:#fff;
+                }
+            }
+        }
+    }
+	
+}
+@media only screen and (min-width : 1100px) {
+	.forward-flat {
+		width: 960px;
+	}
+	.flat-blocks {
+		width: 682px;
+	}
+}
+@media only screen and (min-width : 1530px) {
+	.popup {
+		width: 1180px;
+	}
+	.flat-items {
+		width: 900px;
+	}
+}
+@media only screen and (min-width : 1900px) {
+	.popup {
+		width: 1405px;
+	}
+	.flat-items {
+		width: 1125px;
+	}
+}
