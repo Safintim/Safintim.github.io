@@ -1,0 +1,372 @@
+@font-face{
+    src: url(UniversLTStd-Light.ttf);
+}
+/*теги*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{background: url(images/witewall_3.png);}
+a{text-decoration: none; color: rgba(69, 69, 69, 0.75);}
+
+/*структура сайта*/
+div.main{
+    max-width: 1280px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+div.mid{
+    max-width: 1000px;
+    min-width: 380px;
+    margin: 0 auto;
+}
+div.header{
+    background: url(images/flower.png);
+    min-height: 590px;
+    background-repeat:no-repeat;
+    background-position: top center;
+    position: relative;
+    background-size: cover;
+}
+div.section1{
+    background-color: #ffffff;
+    padding: 65px 0 50px 0;
+	box-shadow: 0 0 5px rgba(0,0,0,.11);
+    margin-bottom: 2px;
+}
+div.news{
+    background-color: #fff;
+    padding: 45px 65px 80px 80px;
+    margin: 0;
+}
+div.footer{
+    margin: 0;
+    background-image: url(images/Rectangle-1-copy-2.png);
+    padding: 38px 0px 30px 65px;
+}
+/*офомрляю линию сверху шапки*/
+div.top_line{
+    min-height: 53px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 5px rgba(0,0,0,.11);
+    padding: 18px 0;
+}
+
+div.nav{
+    float: right;
+    line-height: 52px;
+}
+/*оформляю саму навигацию*/
+div.nav span a{
+    color:rgba(69, 69, 69, 0.75);
+    font: 400 17px 'Segoe UI';
+    padding: 2px 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+div.nav span a:hover{
+    color: #ffffff;
+    background-color: #de6d6e;
+    border-radius: 3px;
+}
+div.nav span{
+    padding: 0 20px 0 0;
+    border-radius: 3px;
+}
+div.nav span:last-child{
+    padding: 5px 15px;
+    background-color: #de6d6e;
+    border-radius: 3px;
+}
+div.nav span:last-child a{
+    color: #ffffff;
+    font: 400 17px 'Segoe UI';
+    padding: 0;
+}
+div.header header{
+    text-align: center;
+}
+div.header header h1{
+    text-transform: uppercase;
+    color: #ffffff;
+    font: 400 69px AlteHaasGrotesk_Bold;
+    text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.22);
+    margin: 350px 0 0 0;
+}
+div.header header p{
+    color: #ffffff;
+    font: 300 25px UniversLT;
+    text-shadow: 0px 0px 13px rgba(0, 0, 0, 0.22);
+    margin: 0;
+}
+/*оформляю первую секцию идущую после шапки*/
+div.section1 header{
+    text-align: center;
+    padding: 0 114px;
+}
+div.section1 header h2{
+    color: #404040;
+    font: 300 35px UniversLT;
+    margin: 0;
+}
+div.section1 header p{
+    color: #636363;
+    font: 300 17px UniversLT;
+    margin: 0 0 90px 0;
+}
+div.images{
+    padding: 0 50px;
+}
+div.images img{
+    margin-right: 55px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    cursor: pointer;
+}
+div.item-l{
+    float: left;
+}
+div.item-r{
+    float: right;
+}
+div.images::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+div.images img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+div.images img:last-child{
+    margin: 0;
+}
+/*новостной блок*/
+div.news img{
+    float: left;
+    margin: 0px 25px 80px 0;
+}
+div.news img.noneMargin{
+    margin:0  25px 0 0;
+}
+div.news p::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+div.news p{
+    font: 300 15px/22px UniversLT;
+    color: #8b8b8b;
+}
+div.news h3{
+    color: #404040;
+    font: 300 27px UniversLT;
+    margin: 0;
+}
+/*оформляю футер*/
+div.widjet{
+    margin-right: 100px;
+    display: inline-block;
+}
+div.w-left{
+    float: left;
+}
+div.w-right{
+    float: left;
+}
+div.footer div.w-right div.widjet:nth-child(2){
+    margin-right: 50px;
+}
+div.social{
+    float: right;
+}
+div.footer p::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+div.footer h4{
+    color: #aeaeae;
+    font: 300 21px / 22px UniversLT;
+    margin: 0 0 25px 0;
+}
+div.footer ul{
+    margin: 0;
+    padding: 0;
+}
+div.footer ul li{
+    list-style-type: none;
+}
+div.footer ul li a{
+    color: #8b8b8b;
+    font: 300 15px/22px UniversLT;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+div.footer ul li:hover a{
+    color: #c4c4c4;
+}
+div.footer p{
+    color: #8b8b8b;
+    font: 300 15px/22px UniversLT;
+    margin: 10px 0;
+}
+div.footer div.social a {
+    margin: 25px 15px 0 0;
+}
+div.footer div.social a:last-child{
+    margin: 0;
+}
+div.footer::after{
+        content: " ";
+        display: table;
+        clear: both;
+    }
+/*очистка обтекания*/
+div.clear{
+    clear: both;
+}
+
+
+@media screen and (max-width:1070px){
+    div.main{
+       margin: 0 20px;
+    }
+    div.top_line {
+        text-align: center;
+    }
+    div.nav{
+        float: none;
+    }
+    div.header header{
+        margin-top: 300px;
+    }
+    div.header header h1{
+        font-size: 59px;
+        margin: 300px 0 0 0;
+    }
+    div.images{
+        text-align: center;
+    }
+    div.images img{
+        margin-right: 40px;
+    }
+    div.widjet{
+        margin-right: 150px;
+    }
+    div.social{
+        width: 100%;
+        margin: 30px auto 0;
+        float:none;
+        text-align: center;
+    }
+}
+@media screen and (max-width:980px){
+    div.section1 header p{
+        margin-bottom: 0 0 60px 0;
+    }
+    div.item-l, div.item-r{
+        float: none;
+        margin: 5px 0;
+    }
+    div.widjet{
+        margin-right: 130px;
+    }
+    div.w-right div.widjet:nth-child(2){
+        margin-right: 0;
+    }
+    div.footer div.social a {
+        margin:  25px 2px 0 0;
+    }
+}
+
+@media screen and (max-width:920px){
+    div.w-left, div.w-right{
+        display: inline-block;
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    div.widjet{
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width:640px){
+    div.footer{
+        padding: 38px 65px 30px 65px;
+    }
+    
+    div.footer div.social a {
+        margin:  25px 2px 0 0;
+    }
+    
+}
+@media screen and (max-width:920px){
+    div.news{
+        text-align: center;
+    }
+    div.news img{
+        float: none;
+        margin: 0 0 40px 0;
+    }
+    div.news p{
+        text-align: left;
+    }
+}
+@media screen and (max-width:640px){
+    div.header header h1{
+        font-size: 35px;
+        margin: 320px 0 0 0;
+    }
+    div.nav span{
+        padding: 0 5px 0 0;
+    }
+    div.nav span a{
+        padding: 2px 7px;
+    }
+    div.news{
+        padding: 45px 15px 80px 15px;
+    }
+    div.news p{
+        font-size: 14px;
+        text-align: justify;
+    }
+    div.footer{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:570px){
+    div.header header h1{
+        font-size: 30px;
+        margin: 350px 0 0 0;
+    }
+    div.section1 header p{
+        text-align: justify;
+    }
+    div.section1 header h2{
+        font-size: 26px;
+    }
+    div.nav span a{
+        font-size: 15px;
+    }
+    div.images img{
+        width: 150px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width:470px){
+    div.nav span a{
+        padding: 2px 2px;
+        font-size: 15px;
+    }
+    div.nav span:last-child a {
+        font-size:15px;
+    }
+    div.header header h1{
+        font-size: 25px;
+        margin: 350px 0 0 0;
+    }
+}
