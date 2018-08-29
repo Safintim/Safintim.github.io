@@ -1,0 +1,263 @@
+body{
+    background: 
+    -webkit-linear-gradient(#404040 1px, rgba(64, 64, 64, 0) 1px),
+    -webkit-linear-gradient(0deg, #404040 1px, rgba(64, 64, 64, 0) 1px), 
+    -webkit-linear-gradient(90deg, #373737 1px, rgba(55, 55, 55, 0) 1px),
+    -webkit-linear-gradient(180deg, #373737 1px, rgba(55, 55, 55, 0) 1px);
+    background: 
+    -webkit-linear-gradient(#404040 1px, rgba(64, 64, 64, 0) 1px), -webkit-linear-gradient(0deg, #404040 1px, rgba(64, 64, 64, 0) 1px), -webkit-linear-gradient(90deg, #373737 1px, rgba(55, 55, 55, 0) 1px), -webkit-linear-gradient(180deg, #373737 1px, rgba(55, 55, 55, 0) 1px);
+    background: 
+    linear-gradient(#404040 1px,rgba(64, 64, 64, 0) 1px),
+    linear-gradient(90deg, #404040 1px,rgba(64, 64, 64, 0) 1px),
+    linear-gradient(0deg, #373737 1px, rgba(55, 55, 55, 0) 1px),
+    linear-gradient(270deg, #373737 1px, rgba(55, 55, 55, 0) 1px);
+    background-color: #333;
+    background-size: 100px 100px,100px 100px, 10px 10px, 10px 10px;
+}
+
+a{-webkit-transition: all 0.5s;transition: all 0.5s;}
+h1,h2,h3{text-align: center; font-weight: 400;font-family: Arial;}
+h1{color: #0093ae; font-size: 48px;}
+h2{color: #d76767;font-size: 36px;}
+h3{color: #e5e5e5;font-size: 36px;}
+div.name h1{
+    margin: 10px 0 50px;
+    padding: 0;
+}
+div.name h2{
+    margin: 50px 0 10px;
+    padding: 0;
+}
+div.main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+div.head{
+    background: #272727; 
+    padding: 1px 0;
+    text-align: center;
+    padding: 50px;
+}
+div.head h3{
+    padding: 0;
+    margin: 50px 0 0;
+}
+div.content{
+    background: #fff;
+    padding: 25px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+div.footer{
+    margin: 50px 0;
+    text-align: center;
+}
+
+div.anons{
+    background-color: #f9f9f9;
+    border: 1px solid #bbb;
+    padding: 20px;
+    margin: 25px;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 340px;
+    -ms-flex: 1 0 340px;
+    flex: 1 0 340px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+div.pic{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 3 260px;
+    -ms-flex: 0 3 260px;
+    flex: 0 3 260px;
+    margin-right: 20px;
+    box-shadow: 0 0 7px #222 inset;
+}
+
+div.pic img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: -1;
+    vertical-align: middle;
+}
+
+div.text{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 200px;
+    -ms-flex: 1 1 200px;
+    flex: 1 1 200px;
+    text-align: justify;
+    max-width: 100%;
+}
+
+div.text h3{
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: left;
+    font: 400 30px Cuprum;
+    color: #6c6c6c;
+}
+div.text p{
+    margin: 11px 0;
+    color: #6c6c6c;
+    font: 400 16px Arial;
+}
+div.text p:last-child{
+    margin-top: 20px;
+    text-align: right;
+}
+div.text p a{
+    background-color: #0070bb;
+    color: #ffffff;
+    font: 400 15px Arial;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #0162a4;
+}
+div.anons:hover h3{
+    color: #e44d26;
+}
+div.text p a:hover{
+    background-color: #e44d26;
+    border: 1px solid #c13612;
+}
+div.vid{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 25px 0;
+}
+div.video{
+    position: relative;
+    
+}
+
+/*
+div.video{       
+    margin: auto;
+    flex: 0 0 100px;
+    padding: 0 20% 26.25%;
+    position: relative;
+}
+div.video iframe, div.video embed, div.video object{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+    top:0;
+    left: 0;
+}
+*/
+@media screen and (max-width: 1224px){
+    div.main{
+        margin: 0 20px;
+    }
+}
+@media screen and (min-width: 880px) and (max-width: 1050px){
+    div.anons{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.pic{
+        margin: auto;
+    }
+    div.text h3{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 880px){
+    div.vid{display: block;}
+    div.video{
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    div.video iframe, div.video embed, div.video object{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+@media screen and (max-width: 650px){
+    h1{font-size: 44px;}
+    h2{font-size: 32px;}
+    h3{font-size: 32px;}
+    div.head img, div.footer img{
+        width: 100%;
+        height: auto;
+    }
+    div.text h3{font-size: 24px;}
+}
+@media screen and (max-width: 500px){
+    h1{font-size: 36px;}
+    h2{font-size: 24px;}
+    h3{font-size: 22px;}
+    div.footer{
+        margin: 30px 0;
+    }
+    div.anons{
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 0 200px;
+        -ms-flex: 1 0 200px;
+        flex: 1 0 200px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.pic, div.text{
+        margin-right: 0;
+        -webkit-box-flex: 0;
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none;
+    }
+    div.text h3{
+        text-align: center;
+        margin: 20px 0;
+    }
+    div.video{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    div.text p{
+        text-align: left;
+        font-size: 16px;
+    }
+}
