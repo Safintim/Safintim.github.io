@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+
+/*фоновое изображение*/
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+/*
+    background: steelblue linear-gradient(
+    rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, .2) 50%
+    ) center center / 100% 1em;
+*/
+    background: #6c6c6c url(images/back2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/*теги*/
+h3{
+    font-family: Cuprum;
+    padding: 0;
+    font-size: 25px;
+    color: #ef2d2d;
+    padding-bottom: 10px;
+}
+a{color:#555; text-decoration: none;}
+
+/*Сыграем?*/
+div.header div.title{
+    padding: 30px 200px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #f74040;
+    text-align: center;
+    font-family: Cuprum;
+}
+/*центровка размер*/
+div.main{
+    width: 1300px;
+    margin: 0 auto;
+}
+/*выбор картинки*/
+div.content div.choice{
+    float: left;
+    width: 35%;
+    padding: 20px;
+    position: relative;
+}
+/*картинки для выбора*/
+/*1*/
+div.choice img.choice-1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+/*перемещение как бы к результату*/
+/*2*/
+div.choice img.choice-2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 300px;
+}
+/*3*/
+div.choice img.choice-3{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+    top:220px;
+}
+/*результат*/
+div.content div.result{
+    float: left;
+    width: 20%;
+    padding: 20px;
+    position: relative;
+}
+/*картинки компа*/
+div.result img{
+    position: absolute;
+    
+}
+.Cimg{
+    top: 200px;
+    left: 170px;
+}
+/*вывод результата*/
+div.result div.textResult{
+    margin-top: 250px;
+    padding: 5px;
+    font-size: 20px;
+    color: #f74040;
+    text-align: center;
+}
+/*кнопки*/
+div.result div.but-game{
+    text-align: center;
+}
+/*кнопка играть снова*/
+div.but-game button{
+    font-size:18px;
+    font-family:reef;
+    color:#838383;
+    padding:15px;
+    border:1px solid #bababa;
+    background:#efefef;
+    opacity:0.8;
+    border-radius:5px;
+    cursor: pointer; 
+}
+#play{margin-bottom: 20px;}
+/*выбор компа, первоначально знак вопроса или монитор с мордой*/
+div.content div.comp{
+    float: left;
+/*    border: 1px solid white;*/
+    width: 35%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+/*вопрос*/
+div.comp div.imgQuest{
+    width: 400px;
+    height: 400px;
+}
+/*футер*/
+div.footer{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.47);
+    padding: 19px 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #555;
+}
+
+
+/*дополнительные стили*/
+div.clear{clear: both;}
+/*добавляем этот класс при нажатии на кнопку*/
+.fade{
+    opacity: 1;
+    -webkit-transition:  all 1000ms linear;
+    transition:  all 1000ms linear;
+    visibility:visible;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+/*по умолчанию, при клике удаляется*/
+.out{
+    opacity: 0;
+    visibility:hidden;
+}
+/*перемещею при клике*/
+.pos{
+    position: absolute;
+    left:500px;
+    top: 200px
+}
+/*стрелочка*/
+hr.arrow{
+    width: 0; 
+    height: 0;
+    border: 20px solid transparent; 
+    border-top-color: #ef2d2d;  
+    border-bottom: 0;
+    margin: 0 auto;
+}
+div.dz{
+    width: 200px;
+    text-align: center;
+    margin-left: 150px;
+
+}
+
+
+
+
+
+

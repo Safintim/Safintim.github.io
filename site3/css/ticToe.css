@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Cuprum);
+*{
+    padding: 0;
+    margin: 0;
+}
+/*теги*/
+body{
+    background: 
+    -webkit-linear-gradient(90deg, #86adeb 1px, rgba(134, 173, 235, 0) 1px), -webkit-linear-gradient(180deg, #86adeb 1px, rgba(134, 173, 235, 0) 1px);
+    background: 
+    linear-gradient(0deg,#86adeb 1px, rgba(134, 173, 235, 0) 1px),
+    linear-gradient(270deg, #86adeb 1px,rgba(134, 173, 235, 0) 1px);
+    background-size:30px 30px,30px 30px;
+    background-color: #efefef;
+}
+a{text-decoration: none; color:#fff;}
+
+/*ширина сайта*/
+
+
+/*шапка*/
+div.header{
+    font-size: 100px;
+    color: #ef2d2d;
+    font-family: Cuprum;
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 5px dashed #d08383;
+}
+/*главный контент*/
+div.content{
+    width: 1300px;
+    margin: 0px auto 50px;
+}
+/*игровое поле*/
+div.pole1{
+    width: 35%;
+    float: left;
+    margin-right: 40px;
+}
+/*таблица для игрового поля*/
+div.pole1 table{
+    border-collapse: collapse;
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    color: #ef2d2d;
+    cursor: pointer;
+}
+/*зашоловок*/
+div.pole1 table caption{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 700; 
+    font-family: cursive;
+}
+/*ячейки*/
+tr  td.tic{
+    font-size: 30px;
+    border: 4px solid #0038b5;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/*убераем лишние границы*/
+td#p0{border-left: none; border-top: none;}
+td#p1{border-top: none;}
+td#p2{border-top: none; border-right: none;}
+td#p3{border-left: none;}
+td#p5{border-right: none;}
+td#p6{border-left: none; border-bottom: none;}
+td#p7{border-bottom: none;}
+td#p8{border-right: none; border-bottom: none;}
+td:hover{
+    background-color:rgba(163, 209, 255, 0.49); 
+    border-radius: 50%;
+}
+div.interf{
+    float: left;
+    text-align: center;
+}
+/* кнопки */
+div.interf button#play{
+    margin: 80px 0 20px;
+}
+div.interf button{
+    padding:16px 32px; 
+    border:solid 1px #478af4; 
+    border-radius: 12px; 
+    font:16px Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    color:#efefef; 
+    box-shadow:2px 2px 6px #7a7878;
+    opacity:0.8;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition:  all 0.5s;
+    background: #0060fa;
+ }
+div.interf button:hover{
+    background: #fd6c6c;
+    color: #fff;
+    opacity: 1;
+    border:solid 1px #ffd8d8; 
+}
+/*результат текстовый*/
+div.textResult{
+    font-family: Cuprum;
+    font-weight: bold;
+    padding: 0;
+    font-size: 30px;
+    color: #ef2d2d;
+    margin-bottom: 20px;
+    
+}
+/*текст под последней кнопкой*/
+div.interf p{
+    color: #5d3a25;
+    font-weight: 700;
+    font-size: 20px;
+}
+/*второе поле*/
+div.pole2{
+    width: 35%;
+    float: right;
+}
+/*таблица для игрового поля*/
+div.pole2 table{
+    border-collapse: collapse;
+    -webkit-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    transform: rotate(10deg);
+    color: #ef2d2d;
+    cursor: pointer;
+}
+/*зашоловок*/
+div.pole2 table caption{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 700; 
+    font-family: cursive;
+}
+/*ячейки*/
+tr  td.toe{
+    font-size: 30px;
+    border: 4px solid #0038b5;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/*убераем лишние границы*/
+td#r0{border-left: none; border-top: none;}
+td#r1{border-top: none;}
+td#r2{border-top: none; border-right: none;}
+td#r3{border-left: none;}
+td#r5{border-right: none;}
+td#r6{border-left: none; border-bottom: none;}
+td#r7{border-bottom: none;}
+td#r8{border-right: none; border-bottom: none;}
+
+
+
+
+/*футер*/
+div.footer{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.47);
+    padding: 19px 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+/*дополнительные стили*/
+div.clear{clear: both;}

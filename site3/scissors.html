@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Scissors</title>
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="scissorsStyle.css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/rockScissorsPaper.js"></script>
+</head>
+<body>
+   <header>
+        <div class="header">
+            <div class="title">Проверь свою интуицию! <br> Обыграй компьютер!</div>
+        </div>
+    </header>
+    <main>
+       <article>
+            <div class="main">
+                <div class="content">
+                   <div class="dz">
+                       <h3>Выбери!</h3>
+                    <hr class="arrow">
+                   </div>
+                    <div class="choice">
+                            <img class="choice-1" id="paper" src="images/paper.png" width="200" alt="Бумага">
+                            <img class="choice-2" id="rock" src="images/rock.png" width="200" alt="Камень">
+                            <img class="choice-3" id="scissors" src="images/scissors.png" width="200" alt="Ножницы">
+                    </div>
+                    <div class="result">
+                        <img id="Compaper" class="Cimg out" src="images/Compaper.png" alt="1">
+                        <img id="Comrock" class="Cimg out" src="images/Comrock.png" alt="2">
+                        <img id="Comscissors" class="Cimg out" src="images/Comscissors.png" alt="3">
+                        <div class="textResult">Результат</div>
+                        <div class="but-game">
+                            <button id="play">Сыграть снова!</button>
+                            <button id="back" onclick="window.location.href='index.html'">Вернуться на главную</button>
+                        </div>
+                    </div>
+                    <div class="comp">
+                        <div class="imgQuest">
+                            <img width="400" src="images/comp.png" width="400" alt="Компьютер">
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+           &copy; <a href="https://vk.com/safintim">Сафин Тимур</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/*фоновое изображение*/
+html {
+    background: url(back1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+/*теги*/
+a{
+    text-decoration: none;
+    color: #555;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    padding: 0 0 5px 0;
+    margin: 0;
+    border-bottom: 7px dotted white;
+    opacity: 0.8;
+}
+/*сброс стилей браузера*/
+body{
+    margin: 0;
+    padding: 0;
+}
+/*структура*/
+div.but-dream{
+    margin: 70px 0 0 400px;
+}
+div.content{margin-top: 50px}
+div.footer{}
+div.mid{
+/*    border: 2px solid white;*/
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/*оформляем кнопку "один шаг до сайта мечты"*/
+div.but-dream #dream{
+    font-size:24px;
+    font-family:reef;
+    color:#838383;
+    padding:15px 10px 15px;
+    width:300px;
+    border:1px solid #bababa;
+    background:#efefef;
+    opacity:0.8;
+    border-radius:5px;
+    cursor: pointer; 
+}
+div.but-dream #dream:hover{
+    background: #887878;
+    color: #e8e3e3;
+}
+/*оформление контента*/
+/*оформление левого блока и правого блока*/
+div.widj-l ,div.widj-r{
+    width: 32%;
+/*    border: 1px dotted red;*/
+    float: left;
+/*    opacity: 0;*/
+}
+/*оформление блоков справа и слева, внутрение поля*/
+.but-right, .but-left{
+    padding: 0 20px;
+}
+/*оформление кнопок слева и справа, одинаковое*/
+.widjbut{    
+    font-family:reef;
+    font-size:16px;
+    color:#555555;
+    padding:22px;
+    width:100px;
+    border:2px solid #bababa;
+    background:#E5DFDF;
+    opacity:0.7;
+    border-radius:5px;
+}
+/*кнопки слева и справа увеличиваются и немного меняют цвет*/
+.mov:hover{
+    -ms-transform:scale(1.03);
+    transform:scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    background:#f5f5f5;
+}
+/*оформление текста справа и слева одинаковое, поля*/
+div.text-l, div.text-r{
+    padding: 10px 10px 0;;
+}
+/*оформление текстов*/
+div.myself{
+    padding:10px;
+    border:1px solid #9B9999;
+    border-radius:5px;
+    background:#F2ECEC;
+    font-size:18px;
+    line-height: 24px;
+    color:#3F3F3F;
+    opacity: 0.8;
+}
+
+/*оформление центрального*/
+div.widj-c{
+    width: 30%;
+/*    border: 1px dotted red;*/
+    float: left;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+/*оформление аватаров*/
+div.widj-c .avatar{
+    border-radius: 100px;
+    border:1px solid #E7E2E2;
+    cursor: pointer;
+    
+}
+/*сдвиг авы Тимур*/
+div.widj-c #avaT{
+    margin-left: 18px;
+}
+
+
+/*инфо о сайте*/
+div.info{
+    border: 1px solid black;
+    background: #F2ECEC;
+    margin: 120px 0;
+    opacity: 0.8;
+}
+/*Текст*/
+div.info div.infoText{
+    padding: 20px 0;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/*блоки с играми*/
+div.games {
+/*    border: 1px solid white;*/
+    padding: 40px;
+    margin: 120px 0;
+}
+/*камень, ножницы , бумана*/
+
+div.games img.scissors{
+    display: block;
+    width: 400px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+div.games img.ticTacToe{
+    display: block;
+    width: 400px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+/*блок с анимацией*/
+div.animation{
+    padding: 40px;
+    border: 1px solid white;
+    margin-bottom: 40px;
+}
+div.animation .anim1{
+    float: left;
+    background: #e7e2e2;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0 40px 150px;
+}
+div.animation .anim2{
+    float: right;
+    background: #e7e2e2;
+    width: 200px;
+    height: 200px;
+    margin: 20px 150px 40px 0;
+}
+/*футер*/
+div.footer{
+    
+    background: #e7e2e2;
+}
+div.footer div.img{
+    float: right;
+    background: red;
+    width: 63px;
+    height: 63px;
+}
+
+div.footer div.copy{
+    font-size: 24px;
+    line-height: 24px;
+    color: #555;
+    padding: 19px 0;
+}
+
+/*дополнительные стили*/
+div.clear{clear: both;}
+/*добавляем этот класс при нажатии на кнопку*/
+.fade{
+    opacity: 1;
+    -webkit-transition:  all 2000ms linear;
+    transition:  all 2000ms linear;
+    visibility:visible;
+}
+/*по умолчанию, при клике удаляется*/
+.out{
+    opacity: 0;
+    visibility:hidden;
+}
+
