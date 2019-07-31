@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Настроение</title>
+  <script id="quotes_json" type="application/json">
+    [
+      {
+        "phrase": "Кукурузные хлопья - теперь без асбеста!",
+        "signature": "©Неизвестный маркетолог"
+      },
+      {
+        "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
+      },
+      {
+        "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
+      },
+      {
+        "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
+      }
+    ]
+  </script>
+  <style>
+    body {
+      background: linear-gradient(45deg, #606c88, #3f4c6b);
+    }
+    div.container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 30px;
+      border-radius: 13px;
+      background-color: lightyellow;
+      text-align: center;
+      font-size: 24px;
+      font-family: cursive;
+      box-shadow: 10px 8px 21px 12px rgb(0, 0, 0);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="container" id="js-quote"></div>
+  </div>
+    <script>
+      var quotes = JSON.parse(document.getElementById('quotes_json').textContent);
+      var random_quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('js-quote').innerHTML = random_quote['phrase'];
+
+      const divQuote = document.getElementById('js-quote');
+      divQuote.addEventListener('click', event => {
+        random_quote = quotes[Math.floor(Math.random() * quotes.length)]
+        divQuote.innerHTML = random_quote['phrase'];
+      });
+    </script>
+</body>
+</html>
