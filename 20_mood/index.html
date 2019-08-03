@@ -12,7 +12,10 @@
         "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
       },
       {
-        "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
+        "phrase": "Жена рожает уже в декабре, а мы вообще без понятия, как назвать ребёнка. Я имена переменным с трудом даю, не то что человеку. Пока рабочий вариант НовыйЧеловек."
+      },
+      {
+        "phrase": "Парни, а ленивые голубцы это те, которые готовятся при попытке их съесть?"
       },
       {
         "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
@@ -45,14 +48,13 @@
   </div>
     <script>
       var quotes = JSON.parse(document.getElementById('quotes_json').textContent);
-      var random_quote = quotes[Math.floor(Math.random() * quotes.length)];
-      document.getElementById('js-quote').innerHTML = random_quote['phrase'];
-
       const divQuote = document.getElementById('js-quote');
-      divQuote.addEventListener('click', event => {
+      const updateQuote = (elem) => {
         random_quote = quotes[Math.floor(Math.random() * quotes.length)]
-        divQuote.innerHTML = random_quote['phrase'];
-      });
+        elem.innerHTML = random_quote['phrase'];
+      }
+      window.addEventListener('load', event => updateQuote(divQuote));
+      divQuote.addEventListener('click', event => updateQuote(divQuote));
     </script>
 </body>
 </html>
