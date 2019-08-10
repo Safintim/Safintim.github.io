@@ -1,0 +1,142 @@
+body {
+    font-family: cursive;
+}
+
+div.page-header {
+    margin-top: 20px;
+}
+
+nav a.nav-link {
+    text-decoration: underline;
+    color: black;
+}
+
+div.page-header a {
+    margin-left: 30px;
+    font-size: 25px;
+    text-decoration: underline;
+    color: black;
+}
+
+div.page-content {
+    width: 80%;
+}
+
+div.request-form {
+    margin: 40px 0;
+}
+
+div.request-form h1{
+    text-align: center;
+}
+
+div.request-form form{
+    text-align: left;
+    border: 3px black solid;
+    padding: 10px;
+}
+div.request-form form span.search{
+    font-size: 25px;
+}
+
+div.request-form form span.description-example{
+    font-size: 12px;
+    color:gray;
+}
+div.request-form form button{
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+div.request-list h1{
+    text-align: center;
+}
+
+div.request-list div.card {
+    border: none;
+}
+
+div.request-list div.card-body {
+    padding-top: 0px;
+}
+
+div.request-list div.card-head {
+    color: #6c757d;
+    font-weight: bold;
+    padding: 0 20px;
+    margin: 0;
+}
+
+div.request-list div.card-body div.card-head {    
+    padding: 1.0rem;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+div.request-list div.card-head span.drop{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.request-list div.card-body a{
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+div.request-list hr {
+    margin-top: 4px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+div.request-list a.all-requests {
+    font-size: 25px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+div.reviews {
+    margin-top: 20px;
+    border: 1px #6c757d solid;
+    padding: 15px;
+}
+
+div.reviews a.carousel-control-prev{
+    margin-left: -70px;
+}
+
+div.reviews a.carousel-control-next{
+    margin-right: -70px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+button.add-review{
+    background-color: #6c757d;
+    color: white;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #b3b4b4;
+    border: 1px black solid;
+}
+
+div.footer h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+.page-link {
+    color: #6c757d;
+}
