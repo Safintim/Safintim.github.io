@@ -15,12 +15,13 @@ div.page-header a {
     margin-left: 30px;
     font-size: 25px;
     text-decoration: underline;
+    white-space: nowrap;
     color: black;
 }
 
-div.page-content {
+/* div.page-content {
     width: 80%;
-}
+} */
 
 div.request-form {
     margin: 40px 0;
