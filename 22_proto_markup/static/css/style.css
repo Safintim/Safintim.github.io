@@ -12,16 +12,12 @@ nav a.nav-link {
 }
 
 div.page-header a {
-    margin-left: 30px;
+    margin-left: 15px;
     font-size: 25px;
     text-decoration: underline;
     white-space: nowrap;
     color: black;
 }
-
-/* div.page-content {
-    width: 80%;
-} */
 
 div.request-form {
     margin: 40px 0;
@@ -63,13 +59,11 @@ div.request-list div.card-body {
 
 div.request-list div.card-head {
     color: #6c757d;
-    font-weight: bold;
-    padding: 0 20px;
+    font-weight: bold;    
     margin: 0;
 }
 
 div.request-list div.card-body div.card-head {    
-    padding: 1.0rem;
     color: #6c757d;
     font-weight: bold;
 }
@@ -83,6 +77,11 @@ div.request-list div.card-body a{
     border-radius: 12px;
     font-size: 15px;
 }
+
+div.request-list div.card-body span{
+    font-size: 12px;
+}
+
 
 div.request-list hr {
     margin-top: 4px;
